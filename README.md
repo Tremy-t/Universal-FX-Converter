@@ -1,4 +1,4 @@
-# Currency Converter
+# Universal FX Currency Converter
 
 This is a web application for converting currencies, built with HTML, CSS, and JavaScript. It fetches real-time exchange rate data to enable users to convert amounts between different currencies. The interface also includes an option to quickly swap the selected source and target currencies.
 
