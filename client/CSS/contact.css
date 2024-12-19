@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: arial;
+    color: white;
+    background-color: rgb(29, 29, 29);
+}
+.main{
+    box-shadow:  0 0 10px rgb(0, 0, 0);
+    display: flex;
+    border-radius: 10px;
+
+}
+.container-one{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-two{
+    padding: 20px;
+    background-color: rgb(18, 18, 18);
+    border-radius: right 10px;
+}
+.pic{
+    object-fit: cover;
+    width: 200px;
+    height: 420px;
+    display: flex;
+    border-radius: 10px;
+    border-right: 0;
+}
+/*h2{
+    text-align: center;
+}*/
+.content{
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.text{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+.email{
+    height: 30px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+.comment{
+    height: 30px;
+    width: 300px;
+    
+}
+.submit{
+    height: 35px;
+    width: 300px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(31, 40, 124);
+    cursor: pointer;
+    color: white;
+}
+.footer{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.ig{
+    height: 50px;
+    width: 50px;
+   border-radius: 100px;
+   border: none;
+   margin-right: 10px;
+   background-color: orange;
+   transition: 0.5s;
+}
+.x{
+    height: 50px;
+    width: 50px;
+   border-radius: 100px;
+   border: none;
+   margin-right: 10px;
+   background-color: orange;
+   transition: 0.5s;
+}
+.fb{
+    height: 50px;
+    width: 50px;
+   border-radius: 100px;
+   border: none;
+   background-color: orange;
+   transition: 0.5s;
+}
+.ig:hover{
+    background-color: rgb(155, 101, 0);
+}
+.x:hover{
+    background-color: rgb(155, 101, 0);
+}
+.fb:hover{
+    background-color: rgb(155, 101, 0);
+}
