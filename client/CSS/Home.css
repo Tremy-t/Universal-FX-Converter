@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: arial;
+    background-image: url(../Assets/pexels-alesiakozik-6771607.jpg);
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+    .main{
+  height: 60px;
+  background-color: black;
+} 
+.main-cont{
+    
+}
+.ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    padding-top: 15px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    font-weight: bold;
+    color: white;
+    display: flex;
+    padding-top: 28px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.header{
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+.sec-container {
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+   color: white;
+   justify-content: center;
+   min-height: 90vh;
+    
+}
+.in-div{
+    
+    /* margin-right: 120px; */
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.sub{
+    text-align: center;
+    color:white;
+}
+.try{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+}
+.btn{
+    height: 40px;
+    width: 300px;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: orange;
+    transition: 0.5s;
+}
+.bttn{
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: #cc8500;
+}
+
+.sidebar ul li a:hover {
+    color: #ffa500; /* Highlight effect on hover */
+}
+.first-one, .third-one
+{
+    text-decoration: none;
+    color: orange;
+}
+.second-one{
+    color: white;
+    text-decoration: none;
+}
+.fourth-one{
+    color: white;
+    text-decoration: none;
+}
+.first,.second,.third,.fourth{
+    margin-right: 10px;
+    text-decoration: none;
+}
