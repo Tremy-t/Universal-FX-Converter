@@ -12,7 +12,7 @@ body {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    background-image: url(./client/Assets/5.jpg);
+    background-image: url(../client/Assets/5.jpg);
     object-fit: contain;
     background-size: cover;
     background-repeat: no-repeat;
