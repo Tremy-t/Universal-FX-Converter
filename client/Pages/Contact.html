@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container-one">
+            <img class="pic" src="../Assets/—Pngtree—financial rollercoaster american currency engulfing_13468674.jpg">
+        </div>
+    
+        <div class="container-two">
+            <div class="content">
+                <h2>Contact Form</h2>
+                <form class="form" id="contactForm">
+                    <label>Full Name</label>
+                    <input type="text" class="text" name="fullName" required>
+                    
+                    <label>Email</label>
+                    <input type="email" class="email" name="email" required>
+                    
+                    <label>Comment or message</label>
+                    <textarea class="comment" name="message" required></textarea>
+    
+                    <button type="submit" class="submit">Submit</button> 
+                    
+                    <div class="footer">
+                        <button type="button" class="ig">IG</button> 
+                        <button type="button" class="x">X</button> 
+                        <button type="button" class="fb">FB</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent the default form submission
+            
+            const formData = new FormData(event.target);
+            
+            const formObject = Object.fromEntries(formData.entries()); // Convert formData to a plain object
+
+            try {
+                const response = await fetch('http://localhost:3000/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formObject),
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert('Message sent successfully!');
+                } else {
+                    const error = await response.json();
+                    alert('Error: ' + error.message);
+                }
+            } catch (error) {
+                console.error('Error submitting the form:', error);
+                alert('An unexpected error occurred.');
+            }
+        });
+    </script>
+</body>
+</html>
