@@ -35,6 +35,3 @@ The app leverages a real-time currency conversion API to fetch up-to-date exchan
 - CSS
 - JavaScript (Modern)
 
-## License
-
-This project is distributed under the [MIT License](LICENSE). You are free to use, modify, and share the code under the terms of this license.
