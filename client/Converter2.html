@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal FX Converter</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="./theme.js"></script>
+</head>
+<body> 
+    <div class="main-cont">
+        <header class="main">
+            <div class="top-bar">
+                <a href="./index.html" class="logo-mini">Universal <span>FX</span></a>
+                <button id="theme-toggle" class="theme-btn" title="Toggle Theme"></button>
+            </div>
+            <h1 id="title">Universal FX</h1>
+            <p style="color: var(--text-muted); font-size: 0.875rem;">Real-time Global Currency Exchange</p>
+        </header>
+
+        <main class="container">
+            <img src="./Assets/currency-exchange_16942639.png" id="coinSticker" alt="Currency exchange icon">
+            
+            <div class="input-group">
+                <label for="userValue" style="display: block; margin-bottom: 6px; font-size: 0.8125rem; font-weight: 600; color: var(--text-muted)">Amount</label>
+                <input type="number" id="userValue" min="1" name="userInput" placeholder="100">
+            </div>
+            
+            <div class="selecterContainer">
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted)">From</label>
+                    <select id="fromCurrency" name="fromCurrency" title="Convert From"></select>
+                </div>
+                
+                <button type="button" id="switchCurrency" title="Swap Currencies">
+                    <img class="pics" src="./Assets/exchange_11019103.png" alt="Swap icon">
+                </button>
+    
+                <div style="flex: 1; display: flex; flex-direction: column; gap: 6px;">
+                    <label style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted)">To</label>
+                    <select id="toCurrency" name="toCurrency" title="Convert To"></select>
+                </div>
+            </div>
+            
+            <p id="status"></p>
+            
+            <button type="button" id="btn">Convert Now</button>
+            
+            <div id="result"></div>
+        </main>
+    
+        <footer class="last">
+            <a class="back-text" href="./index.html">← Back to home</a>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

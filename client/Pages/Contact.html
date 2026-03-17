@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Universal FX</title>
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="../theme.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Universal <span>FX</span></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Converter2.html">Converter</a></li>
+                <li><a href="AboutUs.html">About</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" title="Toggle Theme"></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="main">
+            <div class="container-one">
+                <img class="pic" src="../Assets/—Pngtree—financial rollercoaster american currency engulfing_13468674.jpg" alt="Financial background">
+            </div>
+        
+            <div class="container-two">
+                <div class="content">
+                    <h2>Get in touch</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 0.8125rem;">Have questions or feedback? We'd love to hear from you.</p>
+                    <form class="form" id="contactForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea name="message" placeholder="How can we help?" required></textarea>
+                        </div>
+        
+                        <button type="submit" class="submit">Send Message</button> 
+                        
+                        <div class="social-footer">
+                            <button type="button">Instagram</button> 
+                            <button type="button">Twitter</button> 
+                            <button type="button" style="display: none;">Facebook</button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const formObject = Object.fromEntries(formData.entries());
+
+            try {
+                console.log('Form submission:', formObject);
+                alert('Thank you for your message! This is a demo submission.');
+            } catch (error) {
+                console.error('Error submitting the form:', error);
+                alert('An unexpected error occurred.');
+            }
+        });
+    </script>
+</body>
+</html>
